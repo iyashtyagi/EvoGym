@@ -45,32 +45,28 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: NavbarProps) => {
                     >
                         {<Bars3Icon  className="h-6 text-white"/>}
                     </button>}
-
-                    {/* mobile menu modal */}
-
-                    {!isAboveMediumScreen && isMenuToggled && (
-                        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
-                            <div className="flex justify-end p-10">
-                                <button onClick={()=>{setMenuToggled(!isMenuToggled)}}><XMarkIcon className="h-6 text-white"/></button>
-                            </div>
-
-                            <div className={`ml-[33%] flex flex-col gap-10 text-2xl`}>
-                            <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                            <Link page="Benefits" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                            <Link page="Our Classes" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                            <Link page="Contact Us" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                            </div>
-                        </div>
-
-                        
-                    )}
-
-                    {/* Menu items */}
-
-
                 </div>
             </div>
         </div>
+        
+        {/* mobile menu modal */}
+        {!isAboveMediumScreen && isMenuToggled && (
+        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+            <div className="flex justify-end p-10">
+                <button onClick={()=>{setMenuToggled(!isMenuToggled)}}><XMarkIcon className="h-6 text-white"/></button>
+            </div>
+
+            {/* Menu items */} 
+            <div className={`ml-[33%] flex flex-col gap-10 text-2xl`}>
+            <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+            <Link page="Benefits" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+            <Link page="Our Classes" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+            <Link page="Contact Us" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+            </div>
+        </div>
+
+        )}
+
     </nav>
 }
 
