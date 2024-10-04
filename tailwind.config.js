@@ -26,16 +26,16 @@ export default {
         montserrat: ["Monserrat", "sans-serif"],
       },
       content: {
-        evolvetext: "url('.assets/EvolveText.png')", 
-        abstractwaves: "url('.assets/AbstractWaves.png')", 
-        sparkels: "url('.assets/Sparkels.png')", 
-        circles: "url('.assets/Circles .png')", 
+        evolvetext: "url('./assets/EvolveText.png')", 
+        abstractwaves: "url('./assets/AbstractWaves.png')", 
+        sparkels: "url('./assets/Sparkels.png')", 
+        circles: "url('./assets/Circles.png')", 
       }
     },
     screens : {
       xs: "480px",
       sm: "768px",
-      md: "1060px "
+      md: "1060px"
     }
   },
   plugins: [],
