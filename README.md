@@ -57,6 +57,3 @@ The app will be running at `http://localhost:5173`.
 - `npm run build`: Builds the project for production.
 - `npm run preview`: Previews the built project.
 - `npm run lint`: Lints the codebase using ESLint.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
