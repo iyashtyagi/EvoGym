@@ -1,50 +1,62 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# EvoGym
 
-Currently, two official plugins are available:
+EvoGym is a modern static gym website built using React, TypeScript, TailwindCSS, and Framer Motion. The site provides a smooth and interactive experience with features like smooth scrolling, form validation, and animations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Scripts](#scripts)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Features
+- **Responsive Design**: Optimized for different screen sizes using TailwindCSS.
+- **Animations**: Smooth animations using Framer Motion for an engaging user experience.
+- **Form Handling**: React Hook Form used for seamless form validation and submission.
+- **Smooth Scrolling**: Implemented smooth scrolling for better navigation.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: Strongly typed programming language that builds on JavaScript.
+- **TailwindCSS**: A utility-first CSS framework for rapid UI development.
+- **Framer Motion**: A library for animations in React.
+- **React Hook Form**: Lightweight library for handling form state and validation.
+- **Vite**: Fast frontend build tool.
+- **ESLint**: Linting utility for maintaining code quality.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/iyashtyagi/EvoGym.git
+   cd evogym
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+The app will be running at `http://localhost:5173`.
+
+## Usage
+- Navigate through different sections using the smooth scrolling feature.
+- Explore gym classes, services, and contact forms.
+- The animations provide an interactive and smooth user experience.
+
+## Scripts
+
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the project for production.
+- `npm run preview`: Previews the built project.
+- `npm run lint`: Lints the codebase using ESLint.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
