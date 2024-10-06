@@ -42,7 +42,7 @@ const Home = ({setSelectedPage}:Props) => {
                             </div>
                         </div>
                         <p className="mt-8 text-sm md:text-start">
-                        Unrivaled Gym. Unparalleled Trainig Fitness Classes.  World Class Studios 
+                        Unrivaled Gym. Unparalleled Traninig Fitness Classes.  World Class Studios 
                         to get the Body Shapes That you Dream of.. Get Your Dream Body Now.
                         </p>
                     </motion.div>
