@@ -7,8 +7,8 @@ const Class = ({item}: {item : ClassType}) => {
     return (
         <li className="relative mx-5 inline-block h-[380px] w-[450px]">
             <div className={overlayStyle}>
-                <p>{item.name}</p>
-                <p>{item.description}</p>
+                <p className="text-2xl">{item.name}</p>
+                <p className="pt-5">{item.description}</p>
             </div>
                 <img src={item.image} alt={`${item.name}`}/>
         </li>
